@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<br lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>主页标题</title>
+
+</head>
+<body>
+<view>主页测试</view><br>
+{#这是注释的格式#}
+<view>传入动态参数测试：{{url}}</view>
+<br>
+<view>传入列表参数测试：{{t_list}}</view><br>
+    <view>{{ t_list.2 }}</view><br>
+    <view>{{ t_list[2] }}</view><br>
+<view>传入字典参数测试：{{t_dict}}</view><br>
+    <view>{{ t_dict.name }}</view><br>
+    <view>{{ t_dict['index'] }}</view><br>
+
+<hr>
+{#for循环的使用：可以先写for，然后按tab补全#}
+{#if的使用#}
+{% for t in t_list %}
+    {% if t > 3 %}
+        {{ t }}<br>
+    {% else %}
+        None<br>
+    {% endif %}
+
+{% endfor %}
+<hr>
+
+{#过滤器（管道）的使用方法#}
+{#模式：变量|过滤器名称#}
+{##全大写|字母顺序颠倒#}
+{{ url|upper|reverse }}
+<hr>
+
+
+</body>
+</html>
