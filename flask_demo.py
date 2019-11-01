@@ -7,8 +7,19 @@
 # flash是动态传递消息模块，给模板传递消息，模板中要遍历所有的flash消息，需要设置secret_key用于加密
 from flask import Flask, render_template, request, flash
 
+from flask_wtf import FlaskForm # 表单类
+from wtforms import SubmitField, StringField, PasswordField #自定义表单需要的字段
+from wtforms.validators import DataRequired, EqualTo #wtf扩展提供的表单验证器。DataRequired表示必填，EqualTo表示两者要相同
+
 app = Flask(__name__) # Flask实例需要传入项目名字，"__name__"必须写
 app.secret_key = "lisadfsdfminhkggdfsyi" #flash用加密信息，用于混淆
+
+class RegisterForm(FlaskForm): #新建表单验证类
+    username = StringField('用户：', validators=[DataRequired()])
+    password = PasswordField('密码：', validators=[DataRequired()])
+    password2 = PasswordField('确认密码：', validators=[DataRequired(), EqualTo('password', message='Passwords must be same')])
+    submit = SubmitField('提交')
+
 
 @app.route('/', methods=['POST', 'GET']) # 定义路由，flask中是通过装饰器实现，默认只有get方法
 def hello_world(): #视图函数
@@ -53,6 +64,23 @@ def form_handle():
         else:
             return 'Success'
     return render_template('form.html')
+
+#利用flask_WTF模块构建表单，不好用，而且前后端不易分离
+@app.route('/formwtf', methods=['POST', 'GET'])
+def form_wtf():
+    rf = RegisterForm()
+    if request.method == 'POST':
+        username = request.form.get('username')
+        password = request.form.get('password')
+        password2 = request.form.get('password2')
+        print(username, password, password2)
+        #验证方式
+        if rf.validate_on_submit(): #提交的时候会执行验证函数
+            return 'Success'
+        else:
+            flash('参数有误')
+
+    return render_template('form_wtf.html', form=rf)
 
 if __name__ == '__main__':
     # 运行起一个简易服务器

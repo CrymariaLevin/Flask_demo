@@ -11,12 +11,11 @@
     <label>密码：</label><input type="password", name="password"><br>
     <label>确认密码：</label><input type="password", name="password2"><br>
     <input type="submit", value="提交"><br>
-    {% for message in get_flashed_messages() %} #对应py文件的flash模块
+    {#对应py文件的flash模块#}
+    {% for message in get_flashed_messages() %}
         {{ message }}
     {% endfor %}
 </form>
-
-{#使用flask的WTForm扩展#}
 
 
 </body>
