@@ -11,10 +11,34 @@ from flask_wtf import FlaskForm # 表单类
 from wtforms import SubmitField, StringField, PasswordField #自定义表单需要的字段
 from wtforms.validators import DataRequired, EqualTo #wtf扩展提供的表单验证器。DataRequired表示必填，EqualTo表示两者要相同
 
+from flask_sqlalchemy import SQLAlchemy #数据库模块
+
 app = Flask(__name__) # Flask实例需要传入项目名字，"__name__"必须写
 app.secret_key = "lisadfsdfminhkggdfsyi" #flash用加密信息，用于混淆
 
-class RegisterForm(FlaskForm): #新建表单验证类
+db = SQLAlchemy(app)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:580225@127.0.0.1/flask_demo_sql'
+#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False #动态追踪设置，建议关闭
+app.config['SQLALCHEMY_ECHO'] = True #是否显示sql语句
+
+#数据库的模型，这里是建表
+class Role(db.Model): #角色分类表
+    # 定义表，
+    __tablename__ = 'roles'
+    # 定义字段及其属性
+    id = db.Column(db.INT, primary_key=True)
+    name = db.Column(db.String(20), unique=True)
+
+class User(db.Model): #用户表
+    __tablename__ = 'users'
+    id = db.Column(db.INT, primary_key=True)
+    name = db.Column(db.String(20))
+    type_num = db.Column(db.INT, db.ForeignKey('roles.id')) #标明是外键，关联到roles表的id
+
+
+# 新建表单验证类，这个是flask对应刀html语言的设置类，目前暂时不建议使用
+class RegisterForm(FlaskForm):
     username = StringField('用户：', validators=[DataRequired()])
     password = PasswordField('密码：', validators=[DataRequired()])
     password2 = PasswordField('确认密码：', validators=[DataRequired(), EqualTo('password', message='Passwords must be same')])
