@@ -10,6 +10,7 @@ from flask import Flask, render_template, request, flash
 from flask_wtf import FlaskForm # 表单类
 from wtforms import SubmitField, StringField, PasswordField #自定义表单需要的字段
 from wtforms.validators import DataRequired, EqualTo #wtf扩展提供的表单验证器。DataRequired表示必填，EqualTo表示两者要相同
+import pymysql
 
 from flask_sqlalchemy import SQLAlchemy #数据库模块
 
@@ -18,8 +19,8 @@ app.secret_key = "lisadfsdfminhkggdfsyi" #flash用加密信息，用于混淆
 
 db = SQLAlchemy(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:580225@127.0.0.1/flask_demo_sql'
-#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False #动态追踪设置，建议关闭
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymsql://root:580225@127.0.0.1/flask_demo_sql'
+#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False #动态追踪设置，建议关闭，可能已经移除了这个选项
 app.config['SQLALCHEMY_ECHO'] = True #是否显示sql语句
 
 #数据库的模型，这里是建表
@@ -106,6 +107,27 @@ def form_wtf():
 
     return render_template('form_wtf.html', form=rf)
 
+
+
+# 删除表，实际开发基本不会使用
+db.drop_all()
+# 创建表，实际开发基本不会使用
+db.create_all()
+
 if __name__ == '__main__':
+
+    #增加行：
+    role1 = Role(name='admin')
+    db.session.add(role1)
+    db.session.commit()
+    user1 = User(name='Xiaoming', type_num=role1.id)
+    db.session.add(user1)
+    db.session.commit()
+    # 修改行
+    user1.name = 'Xiaoxiaoming'
+    db.session.commit()
+    # 删除行
+    db.session.delete(user1)
+    db.session.commit()
     # 运行起一个简易服务器
     app.run(debug=True) #此时不用手动重新运行程序，在网页刷新即可
