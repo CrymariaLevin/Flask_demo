@@ -129,5 +129,13 @@ if __name__ == '__main__':
     # 删除行
     db.session.delete(user1)
     db.session.commit()
+    # 查询
+    User.query.all() #查询全部
+    User.query.count() #查询结果行数
+    # 条件查询
+    User.query.get(4) #index查询
+    User.query.filter_by(id=4).first()
+    User.query.filter(User.id == 4).first() # 建议使用这个，支持比较运算符，比较灵活和强大
+
     # 运行起一个简易服务器
     app.run(debug=True) #此时不用手动重新运行程序，在网页刷新即可
