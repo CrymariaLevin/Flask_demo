@@ -6,5 +6,30 @@
 </head>
 <body>
 <view>占位字符</view>
+<form method="post">
+    {{ form_h5.csrf_token() }}<br>
+    {{ form_h5.author.label }}{{ form_h5.author }}<br>
+    {{ form_h5.product.label }}{{ form_h5.product }}<br>
+    {{ form_h5.submit }}<br>
+{#    显示报错闪现消息#}
+    {% for message in get_flashed_messages() %}
+        {{ message }}
+    {% endfor %}
+</form>
+<hr>
+{#先遍历作者，再在作者下遍历作品#}
+<ul>
+    {% for author in author_h5 %}
+{#        段落符#}
+        <li>{{ author.author }}</li>
+        <ul>
+            {% for product in author.products %}
+                <li>{{ product.name }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+    
+</ul>
+
 </body>
 </html>

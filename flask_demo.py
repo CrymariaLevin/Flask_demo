@@ -17,11 +17,11 @@ from flask_sqlalchemy import SQLAlchemy #数据库模块
 app = Flask(__name__) # Flask实例需要传入项目名字，"__name__"必须写
 app.secret_key = "lisadfsdfminhkggdfsyi" #flash用加密信息，用于混淆
 
-db = SQLAlchemy(app)
-
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymsql://root:580225@127.0.0.1/flask_demo_sql'
 #app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False #动态追踪设置，建议关闭，可能已经移除了这个选项
 app.config['SQLALCHEMY_ECHO'] = True #是否显示sql语句
+
+db = SQLAlchemy(app) #一定要放在参数设置的后面
 
 #数据库的模型，这里是建表
 class Role(db.Model): #角色分类表
