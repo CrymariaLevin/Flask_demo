@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Selvaria
 
-from flask import Flask, render_template, request, flash
+from flask import Flask, render_template, request, flash, redirect, url_for
 from flask_wtf import FlaskForm
 from wtforms import SubmitField, StringField
 from wtforms.validators import DataRequired, EqualTo
@@ -19,6 +19,8 @@ import pymysql
     a.自定义表单类
     b.设置secret_key 以及解决编码问题，csrf_token设置问题
 6.实现相关的数据库增删改查逻辑
+    a.在网页实现删除数据的话，点击需要发送请求给指定的路由--》路由的路径需要接收参数
+    flask后台中redirect，url_for的使用，网页HTML中url_for，控制代码块for else的使用
 '''
 
 app = Flask(__name__)
@@ -30,6 +32,7 @@ app.config['SQLALCHEMY_ECHO'] = True #是否显示sql语句
 
 db = SQLAlchemy(app) #一定要放在参数设置的后面
 
+# 数据库类1
 class TestType(db.Model):
     # 定义表，
     __tablename__ = 'flask_test_type' #表名
@@ -43,6 +46,7 @@ class TestType(db.Model):
     def __repr__(self): #内置方法，用于打印对象的描述，否则只会返回对象的内存地址
         return "Author: %s" % self.author
 
+# 数据库类2
 class UnitType(db.Model):
     __tablename__ = 'flask_test_unit'
     id = db.Column(db.INT, primary_key=True)
@@ -74,10 +78,20 @@ def index():
 
         author_sql = TestType.query.filter_by(author=author).first()
         if not author_sql:
-            author_new = TestType(author=author)
-            product_new = UnitType(name=product)
-            db.session.add([author_new, product_new])
-            db.session.commit()
+            try:
+                author_new = TestType(author=author)
+                db.session.add(author_new)
+                db.session.commit()
+                print('添加作者成功')
+
+                product_new = UnitType(name=product, author_id=author_new.id)
+                # db.session.add([author_new, product_new]) #不能这么写，因为是两个类
+                db.session.add(product_new)
+                db.session.commit()
+            except Exception as e:
+                print(str(e))
+                flash('添加作者及其书籍失败')
+                db.session.rollback()  # 数据库已完成的操作全部撤销
         else:
             product_sql = UnitType.query.filter_by(name=product).first()
             if not product_sql:
@@ -100,6 +114,46 @@ def index():
     #print(type(authors))
     #print(authors)
     return render_template('comprehensive_exercise.html', author_h5=authors, form_h5=form)
+
+@app.route('/delete_product/<product_id>', methods=['POST', 'GET'])
+def delete_product(product_id):
+    # 先验证是否有该id，没有提示错误
+    p_result = UnitType.query.get(product_id)
+    if p_result:
+        try:
+            db.session.delete(p_result)
+            db.session.commit()
+        except Exception as e:
+            print(str(e))
+            flash('删除作品失败')
+            db.session.rollback()
+    else:
+        flash('没有该作品')
+
+@app.route('/delete_author/<author_id>', methods=['POST', 'GET'])
+def delete_author(author_id):
+    # 先验证是否有该id，没有提示错误
+    a_result = TestType.query.get(author_id)
+    print(a_result)
+    if a_result:
+        try:
+            # 注意要先删书
+            products = UnitType.query.filter_by(author_id=author_id).all()
+            # print(products)
+            for p in products:
+                db.session.delete(p)
+            # UnitType.query.filter_by(author_id=author_id).delete() # 可以查询后直接删了
+            # db.session.delete(products)
+            # db.session.commit()
+            db.session.delete(a_result)
+            db.session.commit()
+        except Exception as e:
+            print(str(e))
+            flash('删除作者失败')
+            db.session.rollback()
+    else:
+        flash('没有该作者')
+    return redirect(url_for('index')) #传入视图函数名，返回该视图函数对应的路由地址
 
 if __name__ == '__main__':
     app.run(debug=True)

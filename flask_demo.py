@@ -136,6 +136,10 @@ if __name__ == '__main__':
     User.query.get(4) #index查询
     User.query.filter_by(id=4).first()
     User.query.filter(User.id == 4).first() # 建议使用这个，支持比较运算符，比较灵活和强大
+    # 改，先把想改的查出来
+    user1 = User.query.filter_by(id=4).first()
+    # 2. 把这条数据，你需要修改的地方进行修改user
+    user1.title = 'new title'
 
     # 运行起一个简易服务器
     app.run(debug=True) #此时不用手动重新运行程序，在网页刷新即可

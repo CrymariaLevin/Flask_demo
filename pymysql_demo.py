@@ -2,8 +2,9 @@ from resources.base import BaseDb
 
 bd = BaseDb()
 
-sql = "select * from `hcb_factory_price_key` where `factory` = '昌邑石化（江阴油库）'"
+# sql = "select * from `flask_test_unit`"
+sql = "select * from `flask_test_type`"
 bd.dict_cur.execute(sql)
-r_id = bd.dict_cur.fetchone()
+r_id = bd.dict_cur.fetchall()
 print(r_id)
 

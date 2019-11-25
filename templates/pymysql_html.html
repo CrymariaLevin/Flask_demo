@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>表单和数据库相关综合测试</title>
+    <title>使用PyMySQL连接数据库测试</title>
 </head>
 <body>
-<view>占位字符</view>
+<view>用pymysql重写实现全部逻辑</view>
 <form method="post">
     {{ form_h5.csrf_token() }}<br>
     {{ form_h5.author.label }}{{ form_h5.author }}<br>
@@ -24,15 +24,19 @@
 {#        段落符#}
         <li>{{ author.author }} <a href="{{ url_for("delete_author", author_id=author.id) }}">删除</a> </li>
         <ul>
-            {% for product in author.products %}
-{#                注意这里删除时是传入视图函数名#}
-                <li>{{ product.name }} <a href="{{ url_for("delete_product", product_id=product.id) }}">删除</a></li>
-                {% else %}
-                <li>无</li>
+            {% for product in product_h5 %}
+                {% if product.author_id == author.id %}
+                    {#注意这里删除时是传入视图函数名#}
+                    <li>{{ product.name }} <a href="{{ url_for("delete_product", product_id=product.id) }}">删除</a></li>
+{#                    貌似自带else continue#}
+                {% endif %}
+
+            {% else %}
+            <li>无</li>
             {% endfor %}
         </ul>
     {% endfor %}
-    
+
 </ul>
 
 </body>

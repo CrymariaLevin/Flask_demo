@@ -11,16 +11,17 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/flask_demo$flask_demo.coverage" NAME="flask_demo Coverage Results" MODIFIED="1572590946358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/flask_demo$comprehensive_WTF_sql.coverage" NAME="comprehensive_WTF_sql Coverage Results" MODIFIED="1573028313446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_demo$pymysql_demo.coverage" NAME="pymysql_demo Coverage Results" MODIFIED="1572855003532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_demo$form_sql.coverage" NAME="form_sql Coverage Results" MODIFIED="1573203354988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_demo$comprehensive_WTF_sql.coverage" NAME="comprehensive_WTF_sql Coverage Results" MODIFIED="1573109705736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_demo$pymysql_demo.coverage" NAME="pymysql_demo Coverage Results" MODIFIED="1573199681031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="flask_demo.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flask_demo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flask_demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="122" column="4" lean-forward="true" selection-start-line="122" selection-start-column="4" selection-end-line="124" selection-end-column="23" />
+            <state relative-caret-position="513">
+              <caret line="19" column="18" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="19" selection-end-column="18" />
               <folding>
                 <element signature="e#173#229#0" expanded="true" />
               </folding>
@@ -28,14 +29,76 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comprehensive_WTF_sql.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="comprehensive_WTF_sql.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comprehensive_WTF_sql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="90" column="56" lean-forward="false" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
+            <state relative-caret-position="-2674">
+              <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding>
-                <element signature="e#63#119#0" expanded="true" />
+                <element signature="e#63#138#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pymysql_demo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pymysql_demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding>
+                <marker date="1573199680967" expanded="true" signature="59:90" ph="select * fro... hcb_factory_price_key" />
+                <marker date="1573199680967" expanded="true" signature="99:130" ph="select * fro... flask_test_type" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form_sql.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form_sql.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1322">
+              <caret line="85" column="35" lean-forward="false" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
+              <folding>
+                <element signature="e#80#155#0" expanded="true" />
+                <marker date="1573201761757" expanded="true" signature="1301:1332" ph="select * fro... flask_test_type" />
+                <marker date="1573201761757" expanded="true" signature="1301:1347" ph="select * fro... flask_test_type" />
+                <marker date="1573201761757" expanded="true" signature="1301:1349" ph="select * fro... flask_test_type" />
+                <marker date="1573201761757" expanded="true" signature="1301:1350" ph="select * fro... flask_test_type" />
+                <marker date="1573201761757" expanded="true" signature="1527:1568" ph="INSERT INTO `flask_test_type`... " />
+                <marker date="1573201761757" expanded="true" signature="1527:1580" ph="INSERT INTO `flask_test_type`... " />
+                <marker date="1573201761757" expanded="true" signature="1527:1581" ph="INSERT INTO `flask_test_type`... " />
+                <marker date="1573201761757" expanded="true" signature="1746:1795" ph="select * fro... flask_test_type" />
+                <marker date="1573201761757" expanded="true" signature="1952:2025" ph="INSERT INTO `flask_test_unit`... " />
+                <marker date="1573201761757" expanded="true" signature="2380:2429" ph="select * fro... flask_test_type" />
+                <marker date="1573201761757" expanded="true" signature="2622:2671" ph="select * fro... flask_test_unit" />
+                <marker date="1573201761757" expanded="true" signature="2879:2952" ph="INSERT INTO `flask_test_unit`... " />
+                <marker date="1573201761757" expanded="true" signature="3434:3465" ph="select * fro... flask_test_type" />
+                <marker date="1573201761757" expanded="true" signature="3582:3613" ph="select * fro... flask_test_unit" />
+                <marker date="1573201761757" expanded="true" signature="3798:3852" ph="select * fro... flask_test_unit" />
+                <marker date="1573201761757" expanded="true" signature="4258:4305" ph="select * fro... flask_test_unit" />
+                <marker date="1573201761757" expanded="true" signature="4383:4419" ph="DELETE FROM `flask_test_unit`... " />
+                <marker date="1573201761757" expanded="true" signature="4383:4423" ph="DELETE FROM `flask_test_unit`... " />
+                <marker date="1573201761757" expanded="true" signature="4383:4425" ph="DELETE FROM `flask_test_unit`... " />
+                <marker date="1573201761757" expanded="true" signature="4383:4426" ph="DELETE FROM `flask_test_unit`... " />
+                <marker date="1573201761757" expanded="true" signature="4383:4429" ph="DELETE FROM `flask_test_unit`... " />
+                <marker date="1573201761757" expanded="true" signature="4383:4430" ph="DELETE FROM `flask_test_unit`... " />
+                <marker date="1573201761757" expanded="true" signature="4394:4419" ph="INSERT INTO `flask_test_unit`... " />
+                <marker date="1573201761757" expanded="true" signature="4879:4926" ph="select * fro... flask_test_type" />
+                <marker date="1573201761757" expanded="true" signature="5152:5202" ph="DELETE FROM `flask_test_unit`... " />
+                <marker date="1573201761757" expanded="true" signature="5152:5204" ph="DELETE FROM `flask_test_unit`... " />
+                <marker date="1573201761757" expanded="true" signature="5324:5367" ph="DELETE FROM `flask_test_type`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pymysql_html.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/pymysql_html.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,8 +106,8 @@
       <file leaf-file-name="comprehensive_exercise.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/comprehensive_exercise.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="297">
+              <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -53,8 +116,8 @@
       <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+            <state relative-caret-position="512">
+              <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -68,28 +131,6 @@
               <folding>
                 <element signature="e#38#75#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pymysql_demo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pymysql_demo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-              <folding>
-                <marker date="1572855003470" expanded="true" signature="57:125" ph="select * fro... hcb_factory_price_key" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_wtf.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/form_wtf.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -126,12 +167,14 @@
         <option value="$PROJECT_DIR$/templates/form.html" />
         <option value="$PROJECT_DIR$/templates/pymysql_demo.py" />
         <option value="$PROJECT_DIR$/resources/pool.py" />
-        <option value="$PROJECT_DIR$/pymysql_demo.py" />
-        <option value="$PROJECT_DIR$/resources/base.py" />
         <option value="$PROJECT_DIR$/templates/comprehensive_WTF_sql.py" />
-        <option value="$PROJECT_DIR$/flask_demo.py" />
         <option value="$PROJECT_DIR$/templates/comprehensive_exercise.html" />
         <option value="$PROJECT_DIR$/comprehensive_WTF_sql.py" />
+        <option value="$PROJECT_DIR$/flask_demo.py" />
+        <option value="$PROJECT_DIR$/resources/base.py" />
+        <option value="$PROJECT_DIR$/pymysql_demo.py" />
+        <option value="$PROJECT_DIR$/form_sql.py" />
+        <option value="$PROJECT_DIR$/templates/pymysql_html.html" />
       </list>
     </option>
   </component>
@@ -141,7 +184,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -187,7 +230,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/ZSBD/ZS20191107/ZSBD" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -206,7 +249,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.comprehensive_WTF_sql">
+  <component name="RunManager" selected="Python.pymysql_demo">
     <configuration name="comprehensive_WTF_sql" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -245,6 +288,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="form_sql" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flask_demo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/form_sql.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="pymysql_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -264,15 +326,17 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.flask_demo" />
       <item index="1" class="java.lang.String" itemvalue="Python.pymysql_demo" />
       <item index="2" class="java.lang.String" itemvalue="Python.comprehensive_WTF_sql" />
+      <item index="3" class="java.lang.String" itemvalue="Python.form_sql" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.comprehensive_WTF_sql" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.form_sql" />
         <item index="1" class="java.lang.String" itemvalue="Python.pymysql_demo" />
+        <item index="2" class="java.lang.String" itemvalue="Python.comprehensive_WTF_sql" />
       </list>
     </recent_temporary>
   </component>
@@ -293,8 +357,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -302,7 +365,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09968017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13006397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -438,39 +501,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pymysql_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <marker date="1572855003470" expanded="true" signature="57:125" ph="select * fro... hcb_factory_price_key" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="e#38#75#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -492,28 +527,164 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/comprehensive_exercise.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="297">
+          <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask_demo.py">
+    <entry file="file://$PROJECT_DIR$/resources/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="122" column="4" lean-forward="true" selection-start-line="122" selection-start-column="4" selection-end-line="124" selection-end-column="23" />
+        <state relative-caret-position="512">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding>
-            <element signature="e#173#229#0" expanded="true" />
+            <element signature="e#38#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pymysql_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <marker date="1573199680967" expanded="true" signature="59:90" ph="select * fro... hcb_factory_price_key" />
+            <marker date="1573199680967" expanded="true" signature="99:130" ph="select * fro... flask_test_type" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comprehensive_WTF_sql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="90" column="56" lean-forward="false" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
+        <state relative-caret-position="-2674">
+          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding>
-            <element signature="e#63#119#0" expanded="true" />
+            <element signature="e#63#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form_sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1322">
+          <caret line="85" column="35" lean-forward="false" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
+          <folding>
+            <element signature="e#80#155#0" expanded="true" />
+            <marker date="1573201761757" expanded="true" signature="1301:1332" ph="select * fro... flask_test_type" />
+            <marker date="1573201761757" expanded="true" signature="1301:1347" ph="select * fro... flask_test_type" />
+            <marker date="1573201761757" expanded="true" signature="1301:1349" ph="select * fro... flask_test_type" />
+            <marker date="1573201761757" expanded="true" signature="1301:1350" ph="select * fro... flask_test_type" />
+            <marker date="1573201761757" expanded="true" signature="1527:1568" ph="INSERT INTO `flask_test_type`... " />
+            <marker date="1573201761757" expanded="true" signature="1527:1580" ph="INSERT INTO `flask_test_type`... " />
+            <marker date="1573201761757" expanded="true" signature="1527:1581" ph="INSERT INTO `flask_test_type`... " />
+            <marker date="1573201761757" expanded="true" signature="1746:1795" ph="select * fro... flask_test_type" />
+            <marker date="1573201761757" expanded="true" signature="1952:2025" ph="INSERT INTO `flask_test_unit`... " />
+            <marker date="1573201761757" expanded="true" signature="2380:2429" ph="select * fro... flask_test_type" />
+            <marker date="1573201761757" expanded="true" signature="2622:2671" ph="select * fro... flask_test_unit" />
+            <marker date="1573201761757" expanded="true" signature="2879:2952" ph="INSERT INTO `flask_test_unit`... " />
+            <marker date="1573201761757" expanded="true" signature="3434:3465" ph="select * fro... flask_test_type" />
+            <marker date="1573201761757" expanded="true" signature="3582:3613" ph="select * fro... flask_test_unit" />
+            <marker date="1573201761757" expanded="true" signature="3798:3852" ph="select * fro... flask_test_unit" />
+            <marker date="1573201761757" expanded="true" signature="4258:4305" ph="select * fro... flask_test_unit" />
+            <marker date="1573201761757" expanded="true" signature="4383:4419" ph="DELETE FROM `flask_test_unit`... " />
+            <marker date="1573201761757" expanded="true" signature="4383:4423" ph="DELETE FROM `flask_test_unit`... " />
+            <marker date="1573201761757" expanded="true" signature="4383:4425" ph="DELETE FROM `flask_test_unit`... " />
+            <marker date="1573201761757" expanded="true" signature="4383:4426" ph="DELETE FROM `flask_test_unit`... " />
+            <marker date="1573201761757" expanded="true" signature="4383:4429" ph="DELETE FROM `flask_test_unit`... " />
+            <marker date="1573201761757" expanded="true" signature="4383:4430" ph="DELETE FROM `flask_test_unit`... " />
+            <marker date="1573201761757" expanded="true" signature="4394:4419" ph="INSERT INTO `flask_test_unit`... " />
+            <marker date="1573201761757" expanded="true" signature="4879:4926" ph="select * fro... flask_test_type" />
+            <marker date="1573201761757" expanded="true" signature="5152:5202" ph="DELETE FROM `flask_test_unit`... " />
+            <marker date="1573201761757" expanded="true" signature="5152:5204" ph="DELETE FROM `flask_test_unit`... " />
+            <marker date="1573201761757" expanded="true" signature="5324:5367" ph="DELETE FROM `flask_test_type`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/ZSBD/ZS20191107/ZSBD/module/seed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1573453502233" expanded="true" signature="2117:2206" ph="select count... seed_com" />
+            <marker date="1573453502233" expanded="true" signature="2243:2662" ph="select s.id,... seed_com" />
+            <marker date="1573453502233" expanded="true" signature="2477:2588" ph="SELECT a.*, *" />
+            <marker date="1573453502233" expanded="true" signature="2502:2542" ph="SELECT * fro... seed_com_items" />
+            <marker date="1573453502233" expanded="true" signature="2741:2929" ph="select count... seed_com" />
+            <marker date="1573453502233" expanded="true" signature="2784:2895" ph="SELECT * FRO... seed_com_items" />
+            <marker date="1573453502233" expanded="true" signature="2826:2894" ph="SELECT MAX(i... seed_com_items" />
+            <marker date="1573453502233" expanded="true" signature="2966:3454" ph="select s.id,... seed_com" />
+            <marker date="1573453502233" expanded="true" signature="3200:3380" ph="SELECT a.*, *" />
+            <marker date="1573453502233" expanded="true" signature="3225:3336" ph="SELECT * fro... seed_com_items" />
+            <marker date="1573453502233" expanded="true" signature="3267:3335" ph="SELECT MAX(i... seed_com_items" />
+            <marker date="1573453502233" expanded="true" signature="3832:3859" ph="select * fro... dic_seed_item" />
+            <marker date="1573453502233" expanded="true" signature="4229:4323" ph="insert into seed_com_items... " />
+            <marker date="1573453502233" expanded="true" signature="4627:4797" ph="select s.id,... seed_com_items" />
+            <marker date="1573453502233" expanded="true" signature="5095:5141" ph="update seed_com_items... " />
+            <marker date="1573453502233" expanded="true" signature="5352:5393" ph="select id, n... dic_province" />
+            <marker date="1573453502233" expanded="true" signature="5649:5707" ph="select id, n... dic_city" />
+            <marker date="1573453502233" expanded="true" signature="5973:6031" ph="select id, n... dic_city" />
+            <marker date="1573453502233" expanded="true" signature="6656:6858" ph="insert into seed_com... " />
+            <marker date="1573453502233" expanded="true" signature="7598:7795" ph="update seed_com... " />
+            <marker date="1573453502233" expanded="true" signature="9174:9217" ph="update seed_com... " />
+            <marker date="1573453502233" expanded="true" signature="9485:9528" ph="update seed_com... " />
+            <marker date="1573453502233" expanded="true" signature="10148:10174" ph="select id, n... users" />
+            <marker date="1573453502233" expanded="true" signature="10567:10699" ph="insert into follow_record... " />
+            <marker date="1573453502233" expanded="true" signature="11014:11051" ph="delete from follow_record... " />
+            <marker date="1573453502233" expanded="true" signature="11417:11616" ph="select f.id,... follow_record" />
+            <marker date="1573453502233" expanded="true" signature="11906:11940" ph="select role users" />
+            <marker date="1573453502233" expanded="true" signature="12205:12246" ph="update seed_com... " />
+            <marker date="1573453502233" expanded="true" signature="12390:12482" ph="select c.id,... seed_com" />
+            <marker date="1573453502233" expanded="true" signature="12726:12820" ph="select u.id,... users" />
+            <marker date="1573453502233" expanded="true" signature="13118:13162" ph="update seed_com... " />
+            <marker date="1573453502233" expanded="true" signature="13394:13810" ph="select s.id,... seed_com" />
+            <marker date="1573453502233" expanded="true" signature="14071:14128" ph="select id, v... seed_com" />
+            <marker date="1573453502233" expanded="true" signature="14257:14353" ph="select id, p... seed_verify_person" />
+            <marker date="1573453502233" expanded="true" signature="14743:14810" ph="update seed_com... " />
+            <marker date="1573453502233" expanded="true" signature="15818:15958" ph="insert into seed_verify_person... " />
+            <marker date="1573453502233" expanded="true" signature="16487:16625" ph="update seed_verify_person... " />
+            <marker date="1573453502233" expanded="true" signature="16931:16973" ph="delete from seed_verify_person... " />
+            <marker date="1573453502233" expanded="true" signature="17800:17897" ph="insert into seed_file... " />
+            <marker date="1573453502233" expanded="true" signature="18871:19065" ph="select f.id,... seed_file" />
+            <marker date="1573453502233" expanded="true" signature="19366:19410" ph="update seed_file... " />
+            <marker date="1573453502233" expanded="true" signature="19649:19682" ph="delete from seed_file... " />
+            <marker date="1573453502233" expanded="true" signature="21299:21390" ph="insert into seed_com_contact... " />
+            <marker date="1573453502233" expanded="true" signature="21680:21742" ph="select * fro... seed_com_contact" />
+            <marker date="1573453502233" expanded="true" signature="22009:22057" ph="update seed_com_contact... " />
+            <marker date="1573453502233" expanded="true" signature="22525:22676" ph="select count... seed_com" />
+            <marker date="1573453502233" expanded="true" signature="22723:23059" ph="select c.id,... seed_com" />
+            <marker date="1573453502233" expanded="true" signature="23141:23265" ph="select count... seed_com" />
+            <marker date="1573453502233" expanded="true" signature="23302:23611" ph="select c.id,... seed_com" />
+            <marker date="1573453502233" expanded="true" signature="24587:24630" ph="update seed_com... " />
+            <marker date="1573453502233" expanded="true" signature="24817:24932" ph="SELECT count... " />
+            <marker date="1573453502233" expanded="true" signature="25182:25304" ph="select count... " />
+            <marker date="1573453502233" expanded="true" signature="25486:25531" ph="select `name... dic_park" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pymysql_html.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="19" selection-end-column="18" />
+          <folding>
+            <element signature="e#173#229#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -19,7 +19,7 @@ class BaseDb:
         # 如果要使用with conn.cursor() as cursor: 的格式写到这里就可以了
 
         self.cur = self.conn.cursor()
-        self.dict_cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
+        self.dict_cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor) #这里设置了返回值为字典格式
         #logger.info('db connected')
 
     def __del__(self):
